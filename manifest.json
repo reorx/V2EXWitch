@@ -1,0 +1,37 @@
+{
+  "name": "V2EXWitch",
+  "version": "1.2",
+  "description": "V2EX Account Switcher",
+  "manifest_version": 2,
+  "icons": {
+    "128": "static/icon128.png",
+    "48": "static/icon48.png"
+  },
+  "browser_action": {
+    "default_icon": "static/favicon.ico",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "cookies",
+    "tabs",
+    "webRequest",
+    "http://www.v2ex.com/"
+  ],
+  "background": {
+    "scripts": [
+      "lib/underscore.js",
+      "lib/jquery.js",
+      "background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://www.v2ex.com/signin"],
+      "js": ["lib/jquery.js", "signin.js"]
+    },
+    {
+      "matches": ["http://www.v2ex.com/notifications"],
+      "js": ["lib/jquery.js", "notifications.js"]
+    }
+  ]
+}

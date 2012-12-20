@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+input:focus, a:focus {
+    outline: none;
+}
+
+.dev {
+    float: right;
+    color: #fff;
+    padding: 1px 3px;
+    background: red;
+    border-radius: 2px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.container {
+    width: 250px;
+    background: #fcfcfc;
+}
+
+.options {
+}
+
+.header, .footer {
+    height: 33px;
+    line-height: 33px;
+    background: #eee;
+    overflow: hidden;
+    box-shadow: 0 0 5px #aaa;
+    text-align: center;
+    color: #0F2540;
+    position: relative;
+    z-index: 9;
+}
+
+.header .done {
+    display: block;
+    float: right;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 4px;
+    margin-right: 5px;
+    border-radius: 4px;
+    /*border: 1px solid #aaa;*/
+    width: 52px;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    background: #2EA9DF;
+    letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: inset 0 0 3px #aaa;
+}
+
+.title {
+    color: #434343;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.title, .selection {
+    padding-left: 10px;
+}
+
+.selection {
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 0 3px rgba(30, 30, 30, 0.3);
+    font-size: 14px;
+    color: #333;
+}
+
+.selection input[type="radio"] ~ .label {
+    margin-right: 30px;
+    padding-bottom: 3px;
+}
+
+.selection input[type="number"] {
+    width: 60px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    border: 1px solid #ccc;
+    padding: 3px;
+    color: #333;
+    margin-right: 10px;
+}
+
+
+.main {
+}
+
+.nouser {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 15px;
+    color: #434343;
+}
+
+.users {
+    /*background: #fff;*/
+    position: relative;
+    z-index: 1;
+}
+.users ul {
+    margin: 0;
+    padding: 0;
+}
+.users li {
+    /*box-shadow: 0 4px 6px -6px black;*/
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    height: 35px;
+}
+.users li:hover {
+    background: rgba(165, 222, 228, 0.7);
+}
+
+.users li:last-child {
+    margin-bottom: 15px;
+}
+
+.users li a.username {
+    display: block;
+    position: relative;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 25px;
+    color: #0B1013;
+}
+
+.users li:hover a.remove {
+    display: block;
+}
+
+.users li a.remove {
+    display: none;
+    position: absolute;
+    top: 5px; bottom: 5px; right: 5px;
+    width: 25px;
+    line-height: 26px;
+    font-size: 20px;
+    border-radius: 3px;
+    text-align: center;
+    color: #555;
+}
+.users li a.remove:hover {
+    color: #D0104C;
+    /*font-size: 24px;*/
+}
+
+.users li .noti {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 5px; bottom: 5px;
+    width: 25px;
+    line-height: 27px;
+    font-size: 15px;
+    color: #D0104C;
+}
+
+
+.users .active a.username:after {
+    content: '✓';
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    font-size: 20px;
+    /*font-weight: bold;*/
+    color: #2EA9DF;
+}
+
+.footer .buttons {
+    display: inline-block;
+}
+.footer .button {
+    display: inline-block;
+    text-align: center;
+    font-size: 13px;
+    margin-right: 15px;
+    color: #0F2540;
+}
+.footer .button:hover {
+    text-decoration: underline;
+}
+.footer .button:last-child {
+    margin-right: 0;
+}
+
+.options .footer {
+    margin-top: 15px;
+}

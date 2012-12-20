@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="popup.css" media="all">
+    <script src="lib/underscore.js" type="text/javascript"></script>
+    <script src="lib/jquery.js" type="text/javascript"></script>
+    <script src="lib/jquery.numeric.js" type="text/javascript"></script>
+    <script src="popup.js" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main" style="display: block;">
+            <div class="header">
+                <div class="center">账户</div>
+            </div>
+            <div class="users">
+                <div class="nouser" style="display: block;">暂无用户，或第一次使用，请添加</div>
+                <ul>
+<!--                     <li><a class="username" href="#">reorx</a><a class="remove" href="#">⨯</a><span class="noti">3</span></li>
+                    <li><a class="username active" href="#">basecamp</a><a class="remove" href="#">⨯</a></li>
+                    <li><a class="username" href="#">unixtools</a><a class="remove" href="#">⨯</a></li>
+ -->
+                </ul>
+            </div>
+            <div class="footer">
+                <a class="new_user button" href="#">添加</a>
+                <a class="options_ui button" href="#">设置</a>
+                <!-- <a class="get_noti button" href="#">提醒(dev)</a> -->
+            </div>
+        </div>
+
+        <div class="options" style="display: none;">
+            <div class="header">
+                <div class="center">设置</div>
+            </div>
+            <div class="title">切换行为</div>
+            <div class="selection">
+                <input type="radio" id="radio_reload" name="switch_behavior" value="reload" id="">
+                <label class="label" for="radio_reload">重载</label>
+                <input type="radio" id="radio_pop" name="switch_behavior" value="pop" id="">
+                <label class="label" for="radio_pop">新页面</label>
+            </div>
+            <div class="title">提醒请求间隔</div>
+            <div class="selection">
+                <input type="number" name="refresh_time" value="5" min="1" max="999"/>
+                <span class="label">分钟</span>
+
+                <span class="dev">dev</span>
+            </div>
+
+            <div class="footer">
+                <a class="done button" href="#">完成</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
