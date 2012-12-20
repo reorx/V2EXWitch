@@ -12,11 +12,13 @@ var signin_url = 'http://www.v2ex.com/signin';
 var notifications_url = 'http://www.v2ex.com/notifications';
 var daemon_id = null;
 
-// !DEVELOP
+// DEBUG
 // delete localStorage[account_key];
 
 chrome.extension.onMessage.addListener(function(msg, sender, sendResponse) {
-    console.log('msg', msg, 'sender', sender);
+    // DEBUG
+    // console.log('msg', msg, 'sender', sender);
+
     switch(msg.from) {
         case 'signin':
             signin_username = msg.content;

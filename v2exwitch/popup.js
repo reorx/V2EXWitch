@@ -65,7 +65,7 @@ function mainUI() {
             var noti = $('<span class="noti"></span>').text(user.unread_count?user.unread_count:'');
             li.append(noti);
 
-            var a_remove = $('<a href="#" class="remove">⨯</a>').click(function() {
+            var a_remove = $('<a href="#" class="remove">×</a>').click(function() {
                 bg.removeUser(user.username);
                 // $(this).parent().remove();
                 // window.focus();
