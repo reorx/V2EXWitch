@@ -1,7 +1,7 @@
 {
   "name": "V2EXWitch",
-  "version": "1.2",
-  "description": "V2EX Account Switcher",
+  "version": "1.2.1",
+  "description": "V2EX Account Notifier & Switcher",
   "manifest_version": 2,
   "icons": {
     "128": "static/icon128.png",

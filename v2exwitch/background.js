@@ -208,7 +208,7 @@ function getFeed(user) {
     $.get(user.feed_url, function(xml) {
         var entrys = xml.getElementsByTagName('entry');
 
-        console.log('got feed xml, entrys', entrys);
+        console.log('got feed xml, entrys', entrys.length);
 
         if (!entrys.length) {
             user.empty_noti = true;
