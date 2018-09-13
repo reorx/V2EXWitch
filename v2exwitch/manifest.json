@@ -15,7 +15,7 @@
     "cookies",
     "tabs",
     "webRequest",
-    "http://www.v2ex.com/"
+    "https://www.v2ex.com/"
   ],
   "background": {
     "scripts": [
@@ -26,11 +26,11 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://www.v2ex.com/signin"],
+      "matches": ["https://www.v2ex.com/signin"],
       "js": ["lib/jquery.js", "signin.js"]
     },
     {
-      "matches": ["http://www.v2ex.com/notifications"],
+      "matches": ["https://www.v2ex.com/notifications"],
       "js": ["lib/jquery.js", "notifications.js"]
     }
   ]
