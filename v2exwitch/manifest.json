@@ -15,6 +15,7 @@
     "cookies",
     "tabs",
     "webRequest",
+    "http://www.v2ex.com/",
     "https://www.v2ex.com/"
   ],
   "background": {
