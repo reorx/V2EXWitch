@@ -163,7 +163,7 @@ function getUserFeedUrl(user) {
         var match_url = re_url.exec(resp);
         user.feed_url = match_url[1];
 
-        console.log('got feed url');
+        console.log('got feed url', user.feed_url);
 
         saveAccount();
 
@@ -240,6 +240,10 @@ function getFeed(user) {
         }
 
     });
+}
+
+function testGetFeed() {
+    getFeed(account.users[0]);
 }
 
 function feedDaemon() {
