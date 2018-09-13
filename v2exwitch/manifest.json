@@ -1,37 +1,38 @@
 {
   "name": "V2EXWitch",
-  "version": "1.2.1",
+  "version": "1.3.0",
   "description": "V2EX Account Notifier & Switcher",
   "manifest_version": 2,
   "icons": {
-    "128": "static/icon128.png",
-    "48": "static/icon48.png"
+    "128": "images/icon128.png",
+    "48": "images/icon48.png"
   },
   "browser_action": {
-    "default_icon": "static/favicon.ico",
+    "default_icon": "images/favicon.ico",
     "default_popup": "popup.html"
   },
   "permissions": [
     "cookies",
     "tabs",
     "webRequest",
-    "http://www.v2ex.com/"
+    "http://www.v2ex.com/",
+    "https://www.v2ex.com/"
   ],
   "background": {
     "scripts": [
       "lib/underscore.js",
       "lib/jquery.js",
-      "background.js"
+      "core/background.js"
     ]
   },
   "content_scripts": [
     {
-      "matches": ["http://www.v2ex.com/signin"],
-      "js": ["lib/jquery.js", "signin.js"]
+      "matches": ["https://www.v2ex.com/signin"],
+      "js": ["lib/jquery.js", "core/signin.js"]
     },
     {
-      "matches": ["http://www.v2ex.com/notifications"],
-      "js": ["lib/jquery.js", "notifications.js"]
+      "matches": ["https://www.v2ex.com/notifications"],
+      "js": ["lib/jquery.js", "core/notifications.js"]
     }
   ]
 }
