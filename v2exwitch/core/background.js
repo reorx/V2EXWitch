@@ -2,14 +2,14 @@ console.log('loading background.js');
 
 var account;
 var account_key = 'V2EXWITCH_ACCOUNT';
-var top_url = 'http://www.v2ex.com/';
+var top_url = 'https://www.v2ex.com/';
 var auth_cookie_args = {
     url: top_url,
-    name: 'auth'
+    name: 'A2',
 };
 var signin_username = '';
-var signin_url = 'http://www.v2ex.com/signin';
-var notifications_url = 'http://www.v2ex.com/notifications';
+var signin_url = 'https://www.v2ex.com/signin';
+var notifications_url = 'https://www.v2ex.com/notifications';
 var daemon_id = null;
 
 // DEBUG
