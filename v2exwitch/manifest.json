@@ -4,11 +4,11 @@
   "description": "V2EX Account Notifier & Switcher",
   "manifest_version": 2,
   "icons": {
-    "128": "static/icon128.png",
-    "48": "static/icon48.png"
+    "128": "images/icon128.png",
+    "48": "images/icon48.png"
   },
   "browser_action": {
-    "default_icon": "static/favicon.ico",
+    "default_icon": "images/favicon.ico",
     "default_popup": "popup.html"
   },
   "permissions": [
@@ -21,17 +21,17 @@
     "scripts": [
       "lib/underscore.js",
       "lib/jquery.js",
-      "background.js"
+      "core/background.js"
     ]
   },
   "content_scripts": [
     {
       "matches": ["https://www.v2ex.com/signin"],
-      "js": ["lib/jquery.js", "signin.js"]
+      "js": ["lib/jquery.js", "core/signin.js"]
     },
     {
       "matches": ["https://www.v2ex.com/notifications"],
-      "js": ["lib/jquery.js", "notifications.js"]
+      "js": ["lib/jquery.js", "core/notifications.js"]
     }
   ]
 }
